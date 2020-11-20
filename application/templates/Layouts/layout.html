@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Casper Not Found</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='assets/img/favicon.ico')}}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Casper not found</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}" >
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{{url_for('static',filename='assets1/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets1/css/templatemo-sixteen.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets1/css/owl.css')}}">
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='assets/css/check.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/progressbar_barfiller.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animated-headline.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/slick.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+    <link rel="stylesheet" href="../static/assets/css/Home.css">
+    <link rel="stylesheet" href="../static/assets/css/nicepage.css">
+
+    {% block loginpg %} {% endblock loginpg %}
+    {% block profile %} {% endblock profile %}
+    {% block map %} {% endblock map %}
+
+</head>
+
+<body>
+    {% include "Layouts/nav.html" %}
+    <!-- ? Preloader Start 
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{url_for('static', filename='assets/img/logo/loder.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Preloader Start -->
+
+    {% block content %}
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    </hr>
+    {% endblock %}
+    {% include "Layouts/footer.html" %}

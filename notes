@@ -1,0 +1,37 @@
+create an environment
+install flask , flask-wtf and python-dotenv(allows to invoke env variables)
+create a .flaskenv file
+set enviroment variables
+------------------------------------------------
+Simple Flask Application
+Create a main module
+instantiate a Flask application object
+Create a default route to display data to the UI
+Run and Inspect
+
+----------------------------------------------------
+Auto generate the requirements 
+pip3 freeze > requirements.txt
+install the requirements
+pip3 install -r requirements.txt
+
+------------------------------------------------------
+decide project struct
+Creating an application package
+creating a __.init__.py file
+Creating dir for templates and static data
+-----------------------------------------------------
+The main.py (entry) will  link to the application (app folder)
+----------------------------------------------------
+create a config.py module will contain all config info
+routes.py module for all routing patterns
+modify __init__.py to reflect these changes
+----------------------------------------------------
+Creating the template for  home page(index.html)
+importing the render_template funtion
+use jinja template exp for making code blocks 
+Using the include directive to include external files
+-----------------------------------------------------------
+GET
+request.args.get(<field_name>)
+request.args[<field_name>]
