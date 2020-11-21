@@ -12,7 +12,6 @@ from .sentiment.prediction import SentimentAnalyzer
 @app.route('/')
 def redir():
     return redirect('/index')
-USERNAME = ""
 @app.route("/twitterlogin")
 
 def twitter_login():
@@ -20,7 +19,6 @@ def twitter_login():
         return redirect(url_for("twitter.login"))
     resp = twitter.get("account/settings.json")
     if resp.ok:
-        USERNAME = resp.json()['screen_name']
         return render_template('index.html', twitter=twitter, tweets=resp.json()['screen_name'])
     return '<h1> Oops request failed </h1>'
 
@@ -73,5 +71,6 @@ def sentiment():
     resp = twitter.get("account/settings.json")
     if resp.ok:
         USERNAME = resp.json()['screen_name']
-    predict = SentimentAnalyzer()
-    # predict.calculateSentimentCoeff()
+        predict = SentimentAnalyzer()
+        predict.calculateSentimentCoeff('@'+USERNAME, 50)
+    pass

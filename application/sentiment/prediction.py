@@ -24,7 +24,7 @@ def moving_average(a, n=3):
 	return ret[n - 1:]/n
 
 class SentimentAnalyzer():
-	def __init__(self, tokenizerFilename, modelFilename):
+	def __init__(self, tokenizerFilename='application/sentiment/tokenizer.pickle', modelFilename='application/sentiment/model_sentiment_2.ftz'):
 		"""Constructor of the SentimentAnalyzer class.
 		Requires a trained fasttext supervised model and a numpy tokenizer.
 		Args:
