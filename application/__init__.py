@@ -1,18 +1,22 @@
-from flask import Flask
-from config import Config
+import os
+from flask import Flask, redirect, url_for
 from flask_login import LoginManager
+from flask_dance.contrib.twitter import make_twitter_blueprint, twitter
+from config import Configs
 
-# this is a special variable named to indentify the current application that is being rendered or passed to flask
-appp = Flask(__name__)
-appp.config.from_object(Config)
-login = LoginManager(appp)
+app = Flask(__name__)
+app.config.from_object(Configs)
+twitter_bp = make_twitter_blueprint()
+app.register_blueprint(twitter_bp, url_prefix="/login")
+
+
+
+login = LoginManager(app)
 login.login_view = 'login'
-
 from . import routes
 from .model import models
 
-
-@appp.shell_context_processor
+@app.shell_context_processor
 def make_shell_context():
     from .UserDAC import db
     return{'db': db, 'User': models.User}
