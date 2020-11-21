@@ -65,6 +65,8 @@ The tech stack used to create **Twibes** is as follows:
 
 * The web app has been built using **Flask**
 * The web app has been deployed using **Azure App Service**
+<br>
+<a><img src="https://img.icons8.com/color/48/000000/python.png"></a><a><img src="https://img.icons8.com/color/48/000000/azure.png"></a><a><img src="https://img.icons8.com/color/48/000000/twitter.png"></a><a><img src="https://img.icons8.com/color/48/000000/spotify.png"></a><a><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"></a>
 
 
 *Need to add more points here*
