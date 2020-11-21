@@ -10,21 +10,21 @@ import json
 
 @app.route('/')
 def redir():
-    return redirect('/index')
+    return redirect('/tlogin')
+
 @app.route("/tlogin")
-def tweet():
-    return redirect(url_for("twitter.login"))
+def twitter_login():
+    if not twitter.authorized:
+        return redirect(url_for("twitter.login"))
+    resp = twitter.get("account/settings.json")
+    if resp.ok:
+        return render_template('index.html', tweets=resp.json()['screen_name'])
+    return '<h1> Oops request failed </h1>'
 
 @app.route("/index")
 @app.route("/home")
 def index():
-    if not twitter.authorized:
-        return redirect(url_for("twitter.login"))
-    resp = twitter.get("account/verify_credentials.json")
-    print(twitter)
-    assert resp.ok
-    tweets=resp.json()["screen_name"]
-    return render_template('index.html', tweets=tweets)
+    return render_template('index.html', tweets='none')
 
 
 
