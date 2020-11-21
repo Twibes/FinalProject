@@ -70,7 +70,7 @@ The tech stack used to create **Twibes** is as follows:
 * The web app has been deployed using **Azure App Service**
 <br>
 
-<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"><img src="https://fasttext.cc/img/ogimage.png" height="60">
+<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"><img src="https://fasttext.cc/img/ogimage.png" height="55"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50">
 
 *Need to add more points here*
 <br>
