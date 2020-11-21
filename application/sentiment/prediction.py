@@ -10,7 +10,7 @@ import numpy as np
 
 import pickle
 
-from ...config import Configs
+from application import app
 
 def moving_average(a, n=3):
 	"""Calculates the moving (running) average of a numpy vector.
@@ -41,8 +41,8 @@ class SentimentAnalyzer():
 		self.model = fasttext.load_model(modelFilename)
 
 		# Connecting to the Twitter API
-		self.auth = tweepy.AppAuthHandler(Configs.TWITTER_OAUTH_CLIENT_KEY, \
-			Configs.TWITTER_OAUTH_CLIENT_SECRET)
+		self.auth = tweepy.AppAuthHandler(app.config.get('TWITTER_OAUTH_CLIENT_KEY'), \
+			app.config.get('TWITTER_OAUTH_CLIENT_SECRET'))
 		self.api = tweepy.API(self.auth)
 	
 	def calculateSentimentCoeff(self, twitterHandle, n, api=None):

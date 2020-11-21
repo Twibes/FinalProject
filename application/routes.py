@@ -68,9 +68,11 @@ def register():
 
 @app.route('/userval')
 def sentiment():
+    print()
+
     resp = twitter.get("account/settings.json")
     if resp.ok:
         USERNAME = resp.json()['screen_name']
         predict = SentimentAnalyzer()
         variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
-    return render_template ('xyz.html', vari=variable)
+    return render_template('xyz.html', variable=variable)
