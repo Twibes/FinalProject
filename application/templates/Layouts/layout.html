@@ -8,11 +8,12 @@
 <h1>Flask OAuth Example</h1>
 <ul class=navigation>
   <li><a href="{{ url_for('index') }}">overview</a></li>
-  {% if tweets %}
-  <li><a href="{{ url_for('index') }}">sign out [{{ tweets }}]</a></li>
+  {% if not twitter.authorized %}
   <li><a href="{{ url_for('twitter.login') }}">sign in</a></li>
+
   {% else %}
-  <li><a href="{{ url_for('logout') }}">sign out [{{ tweets }}]</a></li>
+  <li><a href="{{ url_for('index') }}">sign out [{{ tweets }}]</a></li>
+
   {% endif %}
 </ul>
 {% for message in get_flashed_messages() %}
