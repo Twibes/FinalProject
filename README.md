@@ -15,7 +15,7 @@ Twibes analyzes your social media activity on Twitter to understand how positive
 ### Why the world needs Twibes
 <br>
 
-**The year 2020 has not been the best year for most of our community.** Whether we consider the Black Lives Matter protests which took place as a response to the killing of George Floyd and several other incidents, the Delhi Riots which took place due to protests against the Citizenship Amendment Act in India, the COVID-19 pandemic which affected folks across the world or any other major issue, the year has definitely taken a toll on all of our health.
+**The year 2020 has not been the best year for most of our community.** Whether we consider the Black Lives Matter protests in response to the killing of George Floyd and several other incidents, the Delhi Riots that occurred due to protests against the Citizenship Amendment Act in India, the End SARS movement in response to police brutality in Nigeria, or the COVID-19 pandemic which affected folks across the world or any other major issue, the year has definitely taken a toll on all of our health.
 
 While a lot of us can cope with taking care of our physical health, most people are not well equipped to manage their mental health. A major reason for this is that there is a lot of stigma revolving around discussions of mental health in most parts of the world. That combined with the lack of education on mental health, **most people are either unaware of or reject the existence of mental health issues**.
 
