@@ -72,6 +72,5 @@ def sentiment():
     if resp.ok:
         USERNAME = resp.json()['screen_name']
         predict = SentimentAnalyzer()
-        #predict.calculateSentimentCoeff('@'+USERNAME, 50)
-    variable = 1
+        variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
     return render_template ('xyz.html', vari=variable)
