@@ -2,34 +2,34 @@ from flask import render_template, redirect, flash, url_for, request
 from flask_login import current_user, login_user, logout_user
 from application import app
 from .UserDAC import db
+from .model.models import User
 from .forms import LoginForm, RegistrationForm
 from werkzeug.urls import url_parse
 from flask_dance.contrib.twitter import twitter
 import json
-
+from .sentiment.prediction import SentimentAnalyzer
 
 @app.route('/')
 def redir():
-    return redirect('/tlogin')
+    return redirect('/index')
+USERNAME = ""
+@app.route("/twitterlogin")
 
-@app.route("/tlogin")
 def twitter_login():
     if not twitter.authorized:
         return redirect(url_for("twitter.login"))
     resp = twitter.get("account/settings.json")
     if resp.ok:
-        return render_template('index.html', tweets=resp.json()['screen_name'])
+        USERNAME = resp.json()['screen_name']
+        return render_template('index.html', twitter=twitter, tweets=resp.json()['screen_name'])
     return '<h1> Oops request failed </h1>'
 
 @app.route("/index")
 @app.route("/home")
 def index():
-    return render_template('index.html', tweets='none')
+    return render_template('index.html', twitter=twitter, tweets=USERNAME)
 
-
-
-'''
-@app.route('/logins', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('index'))
@@ -39,7 +39,7 @@ def login():
         user = User.query.filter_by(username=form.username.data).first()
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
-            return redirect(url_for('logins'))
+            return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
@@ -68,4 +68,10 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
-'''
+@app.route('/userval')
+def sentiment():
+    resp = twitter.get("account/settings.json")
+    if resp.ok:
+        USERNAME = resp.json()['screen_name']
+    predict = SentimentAnalyzer()
+    # predict.calculateSentimentCoeff()

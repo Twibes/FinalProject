@@ -13,11 +13,9 @@ import pickle
 def moving_average(a, n=3):
 	"""Calculates the moving (running) average of a numpy vector.
 	This function is useful in case we want to "smooth" time series.
-
 	Args:
 		a (numpy.array): Input numpy vector.
 		n (int, optional): Width of the moving average window. Defaults to 3.
-
 	Returns:
 		numpy.array: Moving average of the input vector with width "n".
 	"""	
@@ -29,7 +27,6 @@ class SentimentAnalyzer():
 	def __init__(self, tokenizerFilename, modelFilename):
 		"""Constructor of the SentimentAnalyzer class.
 		Requires a trained fasttext supervised model and a numpy tokenizer.
-
 		Args:
 			tokenizerFilename (str): Path for loading tokenizer.
 			modelFilename (str): Path for loading model.
@@ -44,12 +41,10 @@ class SentimentAnalyzer():
 	def calculateSentimentCoeff(self, twitterHandle, n, api):
 		"""Calculates the sentiment coefficient given a Twitter handle
 		and a number of tweets (n) using the days as the time unit.
-
 		Args:
 			twitterHandle (str): Handle of the person to analyze.
 			n (int): Number of tweets to take into consideration.
 			api (tweepy.API): Instance of tweepy's API to connect to Twitter.
-
 		Returns:
 			float: Average of the sentiment of the last activity days.
 		"""
@@ -84,4 +79,3 @@ class SentimentAnalyzer():
 		# This is in case we want to plot the data for debug purposes.
 		# plt.plot(list(sorted(dates.keys())),ts)
 	
-
