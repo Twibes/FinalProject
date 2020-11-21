@@ -50,6 +50,9 @@ The differences in the **Free** and **Premium** models are stated below:
 We have several functionalities that we intend to implement in Twibes in the near future:
 <br>
 
+* Adding support for other social media
+* Functionality to connect Premium users with therapists
+
 *Need to add more points here*
 <br>
 
@@ -67,8 +70,7 @@ The tech stack used to create **Twibes** is as follows:
 * The web app has been deployed using **Azure App Service**
 <br>
 
-<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg">
-
+<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"><img src="https://fasttext.cc/img/ogimage.png" height="60">
 
 *Need to add more points here*
 <br>
