@@ -1,4 +1,4 @@
-![](application/static/img/codec.png)
+![CodeChella Banner](application/static/img/codec.png)
 
 # Twibes - *the vibes we share*
 
@@ -71,12 +71,19 @@ The tech stack used to create **Twibes** is as follows:
 <br>
 <br>
 
+### Features that Twibes covers
+<br>
+
+*Need to add more points here*
+<br>
+<br>
+
 ### Challenges that we faced in the process
 <br>
 
 * *Need to add more points here*
 <br>
-<br>
+
 
 ### Accomplishments that we're proud of
 <br>
@@ -86,8 +93,9 @@ The tech stack used to create **Twibes** is as follows:
 ---
 
 ## The Team Behind Twibes
+<br>
 
-| <img src="application/static/img/Anush.jpg" width=100> | Aanisha's Pic | Victor's Pic | Onajite's Pic | <img src="application/static/img/Aditya.jpeg" width=100> |
+| <img src="application/static/img/Anush.jpg" width=150> | <img src="application/static/img/Aanisha.jpg" width=150> | <img src="application/static/img/Victor.jpg" width=150> | Onajite's Pic | <img src="application/static/img/Aditya.jpeg" width=150> |
 | - | - | - | - | - |
 | Anush Krishna V | Aanisha Bhattacharyya | Victor Dorado Javier | Onajite Taire | Aditya Oberai |
 | [@Anush_krishna_v](https://twitter.com/Anush_krishna_v) | [@AanishaBhattac2](https://twitter.com/AanishaBhattac2) | [@TheVidoja](https://twitter.com/TheVidoja) | [@wonataire](https://twitter.com/wonataire) | [@adityaoberai1](https://twitter.com/adityaoberai1) |
