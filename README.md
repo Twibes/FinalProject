@@ -36,6 +36,10 @@ The differences in the **Free** and **Premium** models are stated below:
 
 ### What's next for Twibes
 
+We have several functionalities that we intend to implement in Twibes in the near future:
+
+*Need to add more points here*
+
 ---
 
 ## Developing Twibes
@@ -45,9 +49,15 @@ The differences in the **Free** and **Premium** models are stated below:
 The tech stack used to create **Twibes** is as follows:
 
 * The web app has been built using **Flask**
+* The web app has been deployed using **Azure App Service**
+
 
 *Need to add more points here*
 
 ### Challenges that we faced in the process
 
+*Need to add more points here*
+
 ### Accomplishments that we're proud of
+
+*Need to add more points here*
