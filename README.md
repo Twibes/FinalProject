@@ -39,7 +39,8 @@ The differences in the **Free** and **Premium** models are stated below:
 | - | - | - |
 | Cost | No charge | $10 / month |
 | Uses per Month | 5 | No limit |
-| Tweets Analyzed at a time | Last 30 tweets | Entire Twitter History |
+| Tweets analyzed at a time | Last 30 tweets | Entire Twitter History |
+| Therapy chatbot | ✔ | ✔ |
 
 *Need to add more points here*
 <br>
@@ -51,7 +52,7 @@ The differences in the **Free** and **Premium** models are stated below:
 We have several functionalities that we intend to implement in Twibes in the near future:
 <br>
 
-* Adding support for other social media
+* Adding support for other social media platforms
 * Functionality to connect Premium users with therapists
 
 *Need to add more points here*
@@ -69,6 +70,10 @@ The tech stack used to create **Twibes** is as follows:
 
 * The web app has been built using **Flask**
 * The web app has been deployed using **Azure App Service**
+* The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**
+* The login and social media data has been obtained using the **Twitter API**
+* The music playlists based on the user's sentiment are generated using the **Spotify API**
+
 <br>
 
 <img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"><img src="https://fasttext.cc/img/ogimage.png" height="55"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50">
@@ -80,7 +85,7 @@ The tech stack used to create **Twibes** is as follows:
 ### Features that Twibes covers
 <br>
 
-*Need to add more points here*
+We have various features in the platform 
 <br>
 <br>
 
@@ -101,7 +106,7 @@ The tech stack used to create **Twibes** is as follows:
 ## The Team Behind Twibes
 <br>
 
-| <img src="application/static/img/Anush.jpg" width=150> | <img src="application/static/img/Aanisha.jpg" width=150> | <img src="application/static/img/Victor.jpg" width=150> | Onajite's Pic | <img src="application/static/img/Aditya.jpeg" width=150> |
+| <img src="application/static/img/Anush.jpg" height=150> | <img src="application/static/img/Aanisha.jpg" height=150> | <img src="application/static/img/Victor.jpg" height=150> | <img src="application/static/img/Onajite.jpg" height=150> | <img src="application/static/img/Aditya.jpeg" height=150> |
 | - | - | - | - | - |
 | Anush Krishna V | Aanisha Bhattacharyya | Victor Dorado Javier | Onajite Taire | Aditya Oberai |
 | [@Anush_krishna_v](https://twitter.com/Anush_krishna_v) | [@AanishaBhattac2](https://twitter.com/AanishaBhattac2) | [@TheVidoja](https://twitter.com/TheVidoja) | [@wonataire](https://twitter.com/wonataire) | [@adityaoberai1](https://twitter.com/adityaoberai1) |
