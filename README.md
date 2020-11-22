@@ -77,7 +77,7 @@ The tech stack used to create **Twibes** is as follows:
 * The web app has been built using **Flask**.
 * The web app has been deployed using **Azure App Service**.
 * The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**.
-* The login and social media data has been obtained using the **Twitter API**.
+* The OAuth and social media data has been obtained using the **Twitter API**.
 * The Twitter feed is accessed using the **Twitter API** and **tweepy**.
 * The sentiment analysis is carried out by using a **fasttext** model, analyzing sentence by sentence.
 * Sentence tokenization is done by means of a **Punkt sentence tokenizer**, provided by **NLTK**.
@@ -93,7 +93,7 @@ The tech stack used to create **Twibes** is as follows:
 
 We have various features in the platform designed to help the users better understand their mental state:
 
-* Twitter feed analysis
+* Twitter feed analysis & Insights
 * Sentiment-based music playlists
 * Automated therapy chatbot
 
@@ -104,7 +104,7 @@ We have various features in the platform designed to help the users better under
 <br>
 
 * We really struggled deciding how the Twitter feed analysis was going to be carried out, but in the end we succeded.
-* *Need to add more points here*
+* Documentation for Twitter OAuth was missing from the portal had to use multiple old tutorials to get the OAuth up and running. Twitter Ouath plus flask is bit tricky ever since the new update
 
 <br>
 <br>
@@ -115,8 +115,7 @@ We have various features in the platform designed to help the users better under
 * We're really proud of having successfully implemented a Twitter feed sentiment analysis.
 * We're also really proud of having successfully trained and incorporated a chatbot tailored for emotional support.
 * Last but not least, we're also really proud of having created an application that puts together the Twitter and Spotify API in a meaningful way.
-* *Need to add more points here*
-
+* Setted up the Twitter Oauth through extensive trail and error
 ---
 
 ## The Team Behind Twibes
