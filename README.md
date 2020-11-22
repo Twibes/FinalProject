@@ -11,7 +11,7 @@
 
 Twibes is a web application that allows you to uplift your mental health with the help of music therapy.
 
-Twibes analyzes your social media activity on Twitter to understand how positive or negative the content you share is and accordingly using Spotify's recommendation system to deliver music that will help uplift your mood.
+Twibes analyzes your social media activity on Twitter to understand how positive or negative the content you share is and accordingly using Spotify's recommendation system to deliver music that will help uplift your mood. We also have a therapy chatbot that the people can use for preliminary counselling and support.
 <br>
 <br>
 
@@ -33,14 +33,16 @@ In this huge crisis around mental health, **we want to give people a chance to t
 
 For the time-being, all features in Twibes are available to test for free. However, when we launch this product in the market, we believe that the best revenue model for our product is a ***freemium model***.
 
-The differences in the **Free** and **Premium** models are stated below:
+The differences in the **Free** and **Premium** models, once the **Twibes** platform is fully ready, are stated below:
 
 | | Free | Premium |
 | - | - | - |
 | Cost | No charge | $10 / month |
 | Uses per Month | 5 | No limit |
 | Tweets analyzed at a time | Last 30 tweets | Entire Twitter History |
-| Therapy chatbot | ✔ | ✔ |
+| Automated therapy chatbot | ✔ | ✔ |
+| Therapists-as-a-Service | ❌ | ✔ |
+| Weekly analysis and email report | ❌ | ✔ |
 
 *Need to add more points here*
 <br>
@@ -53,7 +55,8 @@ We have several functionalities that we intend to implement in Twibes in the nea
 <br>
 
 * Adding support for other social media platforms
-* Functionality to connect Premium users with therapists
+* Functionality to connect Premium users with therapists (Therapists-as-a-Service)
+* Automated weekly analysis of social media feed as well as emailed report
 
 *Need to add more points here*
 <br>
@@ -73,6 +76,7 @@ The tech stack used to create **Twibes** is as follows:
 * The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**
 * The login and social media data has been obtained using the **Twitter API**
 * The music playlists based on the user's sentiment are generated using the **Spotify API**
+* The therapy chatbot has been built using **Azure QnA Maker** and **Azure Bot Service**
 
 <br>
 
@@ -85,7 +89,11 @@ The tech stack used to create **Twibes** is as follows:
 ### Features that Twibes covers
 <br>
 
-We have various features in the platform 
+We have various features in the platform designed to help the users better understand their mental state:
+
+* Twitter feed analysis
+* Sentiment-based music playlists
+* Automated therapy chatbot
 <br>
 <br>
 
@@ -94,7 +102,7 @@ We have various features in the platform
 
 * *Need to add more points here*
 <br>
-
+<br>
 
 ### Accomplishments that we're proud of
 <br>
