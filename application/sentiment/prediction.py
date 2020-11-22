@@ -11,7 +11,7 @@ import numpy as np
 import pickle
 
 from application import app
-
+# import matplotlib.pyplot as plt
 def moving_average(a, n=3):
 	"""Calculates the moving (running) average of a numpy vector.
 	This function is useful in case we want to "smooth" time series.
@@ -45,7 +45,7 @@ class SentimentAnalyzer():
 			app.config.get('TWITTER_OAUTH_CLIENT_SECRET'))
 		self.api = tweepy.API(self.auth)
 	
-	def calculateSentimentCoeff(self, twitterHandle, n, api=None):
+	def calculateSentimentCoeff(self,n, twitterHandle='@adityaoberai1', api=None):
 		"""Calculates the sentiment coefficient given a Twitter handle
 		and a number of tweets (n) using the days as the time unit.
 		Args:
@@ -84,9 +84,9 @@ class SentimentAnalyzer():
 				n += 1
 			ts = np.append(ts, [aux/n], axis=None)
 		
+		plt.plot(list(sorted(dates.keys())),ts)
 		# Return the average of the coefficients of the retrieved dates.
 		return np.average(ts)
 
 		# This is in case we want to plot the data for debug purposes.
-		# plt.plot(list(sorted(dates.keys())),ts)
 	

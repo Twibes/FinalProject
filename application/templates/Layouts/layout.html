@@ -1,24 +1,27 @@
-<!doctype html>
-<head>
-<title>{% block title %}Welcome{% endblock %} | Flask OAuth Example</title>
-<link rel=stylesheet type=text/css href="{{ url_for('static',
-  filename='style.css') }}">
-</head>
-<body>
-<h1>Flask OAuth Example</h1>
-<ul class=navigation>
-  <li><a href="{{ url_for('index') }}">overview</a></li>
-  {% if g.user %}
-  <li><a href="{{ url_for('twitter.login') }}">sign in</a></li>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Hello World!</title>
+    
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
 
-  {% else %}
-  <li><a href="{{ url_for('index') }}">sign out [{{ tweets }}]</a></li>
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/fontawesome-all.min.css')}}">
 
-  {% endif %}
-</ul>
-{% for message in get_flashed_messages() %}
-  <p class=message>{{ message }}</p>
-{% endfor %}
-{% block body %}{% endblock %}
-</body>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/swiper.min.css')}}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    {% include "Layouts/nav.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "Layouts/footer.html" %}
 </html>
