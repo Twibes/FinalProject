@@ -102,6 +102,7 @@ class SpotifyAPI(object):
         #seed_tracks='55SfSsxneljXOk5S3NVZIW'
 
         # PERFORM THE QUERY
+        endpoint_url = "https://api.spotify.com/v1/recommendations?"
         query = f'{endpoint_url}limit={limit}&market={market}&seed_genres={seed_genres}&target_danceability={target_danceability}'
         #query += f'&seed_artists={seed_artists}'
         #query += f'&seed_tracks={seed_tracks}'
