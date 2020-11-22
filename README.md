@@ -54,10 +54,12 @@ The differences in the **Free** and **Premium** models, once the **Twibes** plat
 We have several functionalities that we intend to implement in Twibes in the near future:
 <br>
 
-* Adding support for other social media platforms
 * Functionality to connect Premium users with therapists (Therapists-as-a-Service)
-* Incorporate more social medias feeds, like Facebook,Instagram 
-* Automated weekly analysis of social media feed as well as emailed report
+* Incorporate more social media feeds, like Facebook or Instagram.
+* Automated weekly analysis of social media feed as well as emailed report.
+* Improved track recommendations.
+* Incorporate state of the art sentiment analysis models based in deep learning.
+* Adding support for a continued sentiment analysis, so that we can predict and detect in advance when a person will need assistance.
 
 *Need to add more points here*
 <br>
@@ -72,13 +74,15 @@ We have several functionalities that we intend to implement in Twibes in the nea
 
 The tech stack used to create **Twibes** is as follows:
 
-* The web app has been built using **Flask**
-* The web app has been deployed using **Azure App Service**
-* The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**
-* The login and social media data has been obtained using the **Twitter API**
-* The Twitter feed is accessed using the **Twitter API** and **tweepy**
-* The music playlists based on the user's sentiment are generated using the **Spotify API**
-* The therapy chatbot has been built using **Azure QnA Maker** and **Azure Bot Service**
+* The web app has been built using **Flask**.
+* The web app has been deployed using **Azure App Service**.
+* The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**.
+* The login and social media data has been obtained using the **Twitter API**.
+* The Twitter feed is accessed using the **Twitter API** and **tweepy**.
+* The sentiment analysis is carried out by using a **fasttext** model, analyzing sentence by sentence.
+* Sentence tokenization is done by means of a **Punkt sentence tokenizer**, provided by **NLTK**.
+* The music playlists based on the user's sentiment are generated using the **Spotify API**.
+* The therapy chatbot has been built using **Azure QnA Maker** and **Azure Bot Service**.
 
 <br>
 
@@ -96,19 +100,25 @@ We have various features in the platform designed to help the users better under
 * Twitter feed analysis
 * Sentiment-based music playlists
 * Automated therapy chatbot
+
 <br>
 <br>
 
 ### Challenges that we faced in the process
 <br>
 
+* We really struggled deciding how the Twitter feed analysis was going to be carried out, but in the end we succeded.
 * *Need to add more points here*
+
 <br>
 <br>
 
 ### Accomplishments that we're proud of
 <br>
 
+* We're really proud of having successfully implemented a Twitter feed sentiment analysis.
+* We're also really proud of having successfully trained and incorporated a chatbot tailored for emotional support.
+* Last but not least, we're also really proud of having created an application that puts together the Twitter and Spotify API in a meaningful way.
 * *Need to add more points here*
 
 ---
