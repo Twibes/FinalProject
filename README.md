@@ -1,4 +1,5 @@
 ![CodeChella Banner](application/static/img/codec.png)
+![Logo](application/static/img/logo.png)
 
 # Twibes - *the vibes we share*
 
