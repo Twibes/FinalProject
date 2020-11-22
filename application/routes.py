@@ -1,3 +1,4 @@
+import os
 from flask import render_template, redirect, flash, url_for, request
 from flask_login import current_user, login_user, logout_user
 from application import app
@@ -76,3 +77,7 @@ def sentiment():
         predict = SentimentAnalyzer()
         variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
     return render_template('xyz.html', variable=variable)
+@app.route('/bot')
+def bot():
+    key=os.environ.get('bot_secret')
+    return render_template('bot.html',secret = key) 
