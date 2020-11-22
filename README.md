@@ -56,6 +56,7 @@ We have several functionalities that we intend to implement in Twibes in the nea
 
 * Adding support for other social media platforms
 * Functionality to connect Premium users with therapists (Therapists-as-a-Service)
+* Incorporate more social medias feeds, like Facebook,Instagram 
 * Automated weekly analysis of social media feed as well as emailed report
 
 *Need to add more points here*
@@ -75,6 +76,7 @@ The tech stack used to create **Twibes** is as follows:
 * The web app has been deployed using **Azure App Service**
 * The front end of the web app has been built using **HTML**, **CSS**, and **Bootstrap**
 * The login and social media data has been obtained using the **Twitter API**
+* The Twitter feed is accessed using the **Twitter API** and **tweepy**
 * The music playlists based on the user's sentiment are generated using the **Spotify API**
 * The therapy chatbot has been built using **Azure QnA Maker** and **Azure Bot Service**
 
