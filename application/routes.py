@@ -19,13 +19,13 @@ def twitter_login():
         return redirect(url_for("twitter.login"))
     resp = twitter.get("account/settings.json")
     if resp.ok:
-        return render_template('index.html', twitter=twitter, tweets=resp.json()['screen_name'])
+        return render_template('landingPage.html', twitter=twitter, tweets=resp.json()['screen_name'])
     return '<h1> Oops request failed </h1>'
 
 @app.route("/index")
 @app.route("/home")
 def index():
-    return render_template('index.html', twitter=twitter)
+    return render_template('landingPage.html', twitter=twitter)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -76,7 +76,3 @@ def sentiment():
         predict = SentimentAnalyzer()
         variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
     return render_template('xyz.html', variable=variable)
-
-@app.route('/bot')
-def bot():
-    return render_template('bot.html',secret = app.config.get('bot_secret'))
