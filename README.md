@@ -1,7 +1,7 @@
 ![CodeChella Banner](application/static/img/codec.png)
 ![Logo](application/static/img/logo.png)
 
-# Twibes - *the vibes we share*
+# Twibes - *the vibes you share*
 
 ## About Twibes
 <br>
