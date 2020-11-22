@@ -60,8 +60,9 @@ We have several functionalities that we intend to implement in Twibes in the nea
 * Improved track recommendations.
 * Incorporate state of the art sentiment analysis models based in deep learning.
 * Adding support for a continued sentiment analysis, so that we can predict and detect in advance when a person will need assistance.
+* We plan to do a continued analysis, over tweets of premium users over a longer time period, (using Premium Twitter API) and make them analyze improvements, on      their mental health.
 
-*Need to add more points here*
+
 <br>
 
 ---
