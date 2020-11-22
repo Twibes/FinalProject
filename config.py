@@ -14,3 +14,4 @@ class Configs(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     TWITTER_OAUTH_CLIENT_KEY = os.environ.get('TWITTER_OAUTH_CLIENT_KEY', default='TWITTER CONSUMER KEY')
     TWITTER_OAUTH_CLIENT_SECRET = os.environ.get('TWITTER_OAUTH_CLIENT_SECRET', default='ENTER TWITTER CONSUMER SECRET')
+    bot_secret = os.environ.get('bot_secret')

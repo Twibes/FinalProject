@@ -76,3 +76,7 @@ def sentiment():
         predict = SentimentAnalyzer()
         variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
     return render_template('xyz.html', variable=variable)
+
+@app.route('/bot')
+def bot():
+    return render_template('bot.html',secret = app.config.get('bot_secret'))
