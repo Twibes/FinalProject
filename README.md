@@ -1,4 +1,4 @@
-![](application/static/img/codec.png)
+![CodeChella Banner](application/static/img/codec.png)
 
 # Twibes - *the vibes we share*
 
@@ -50,6 +50,9 @@ The differences in the **Free** and **Premium** models are stated below:
 We have several functionalities that we intend to implement in Twibes in the near future:
 <br>
 
+* Adding support for other social media
+* Functionality to connect Premium users with therapists
+
 *Need to add more points here*
 <br>
 
@@ -65,7 +68,16 @@ The tech stack used to create **Twibes** is as follows:
 
 * The web app has been built using **Flask**
 * The web app has been deployed using **Azure App Service**
+<br>
 
+<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/azure.png"><img src="https://img.icons8.com/color/48/000000/twitter.png"><img src="https://img.icons8.com/color/48/000000/spotify.png"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"><img src="https://fasttext.cc/img/ogimage.png" height="55"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="50"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50">
+
+*Need to add more points here*
+<br>
+<br>
+
+### Features that Twibes covers
+<br>
 
 *Need to add more points here*
 <br>
@@ -76,9 +88,19 @@ The tech stack used to create **Twibes** is as follows:
 
 * *Need to add more points here*
 <br>
-<br>
+
 
 ### Accomplishments that we're proud of
 <br>
 
 * *Need to add more points here*
+
+---
+
+## The Team Behind Twibes
+<br>
+
+| <img src="application/static/img/Anush.jpg" width=150> | <img src="application/static/img/Aanisha.jpg" width=150> | <img src="application/static/img/Victor.jpg" width=150> | Onajite's Pic | <img src="application/static/img/Aditya.jpeg" width=150> |
+| - | - | - | - | - |
+| Anush Krishna V | Aanisha Bhattacharyya | Victor Dorado Javier | Onajite Taire | Aditya Oberai |
+| [@Anush_krishna_v](https://twitter.com/Anush_krishna_v) | [@AanishaBhattac2](https://twitter.com/AanishaBhattac2) | [@TheVidoja](https://twitter.com/TheVidoja) | [@wonataire](https://twitter.com/wonataire) | [@adityaoberai1](https://twitter.com/adityaoberai1) |

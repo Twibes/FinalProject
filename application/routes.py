@@ -25,7 +25,7 @@ def twitter_login():
 @app.route("/index")
 @app.route("/home")
 def index():
-    return render_template('index.html', twitter=twitter, tweets=USERNAME)
+    return render_template('index.html', twitter=twitter)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -72,5 +72,5 @@ def sentiment():
     if resp.ok:
         USERNAME = resp.json()['screen_name']
         predict = SentimentAnalyzer()
-        predict.calculateSentimentCoeff('@'+USERNAME, 50)
-    pass
+        variable = predict.calculateSentimentCoeff('@'+USERNAME, 50)
+    return render_template ('xyz.html', vari=variable)
