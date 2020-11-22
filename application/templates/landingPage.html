@@ -1,6 +1,9 @@
 {% extends "Layouts/layout.html" %}
 {% block body %}
 
+<h1>Twibe</h1>
+<h2>Music therapy after a long hard day of tweeting</h2>
+<h4>Get recommended playlists based on the sentiment analysis of your twitter feed. Enjoy! </h4>
     <p>
       <a href="{{ url_for('twitter.login') }}"><img src="{{
         url_for('static', filename='sign-in.png') }}" alt="sign in"></a>
